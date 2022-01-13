@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    box-shadow: none !important;
+}
+
+.image {
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-attachment: fixed;
+    top: 0;
+    z-index: -10;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 1;
+    font-family: 'Raleway';
+    position: absolute;
+    width: 100%;
+}
+@media screen and (min-width:992px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0); 
+    }
+}
+
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 23px;
+}
+
+.overlay {
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.418);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    color: #fff;
+    text-align: center;
+
+}
+
+.banner-text {
+    margin-top: 200px;
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    font-weight: 100;
+    font-family: 'Playfair';
+}
+
+.banner-text p {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-family: 'Raleway';
+}
+
+.banner-content input {
+    padding: 15px 0 15px 10px;
+    border-radius: 0px;
+    font-size: 18px;
+}
+
+.banner-content button {
+    border-radius: 0px;
+    padding: 0 30px 0 30px;
+    font-size: 18px;
+}
+
+@media screen and (min-width:992px) {
+    .container-fluid {
+        display: flex;
+        justify-content: space-around !important;
+    }
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+/*>>>>>>>>>>>>>DESTINATION SECTION>>>>>>>>>>>>>>>*/
+.destination {
+    margin-top: -50px;
+    padding: 0 100px;
+    font-family: 'Playfair';
+}
+
+.container .row .img-bg {
+    display: block;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.img-bg {
+    text-decoration: none;
+    color: #fff;
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+.img-bg:hover {
+    transform: translateY(0);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.295) !important;
+}
+
+.destination .text {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.destination .text {
+    transform: translateY(10px);
+    transition: 0.3s;
+}
+
+.img-bg:hover .text {
+    transform: translateY(0);
+    color: #fff;
+}
+
+.dest-overlay {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.356);
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.img-bg:hover .dest-overlay {
+    opacity: 1;
+}
+
+.text span {
+    font-size: 25px;
+}
+
+.text p {
+    opacity: 0;
+    color: #BCC3C7;
+    transform: translateY(15px);
+    transition: 0.3s;
+}
+
+.img-bg:hover .text p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*>>>>>>>>>>>>>> TOP SECTION >>>>>>>>>>>*/
+
+.top-section {
+    margin-top: 100px;
+}
+.top-title h2 {
+    font-family: 'Playfair';
+    font-size: 40px;
+}
+.top-title p {
+    font-family: 'Raleway';
+    color: #888;
+    letter-spacing: 0.5px;
+}
+.place {
+    display: block;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.top-text h5 {
+    font-family: 'Playfair';
+}
+.top-text p {
+    font-family: 'Playfair';
+    color: #999;
+}
+.hover {
+    overflow: hidden;
+}
+.top-overlay {
+    width: 100%;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 0.534);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.hover:hover .top-overlay {
+    opacity: 1;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>> GET_STARTED SECTION >>>>>>>>>>>>>>>>*/
+
+
+.section-cover {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.intro-text {
+    margin-top: 50px;
+    color: #fff;
+    padding: 20px;
+}
+.intro-text h2 {
+    font-family: 'Playfair';
+    font-size: 40px;
+}
+.intro-text p {
+    font-family: 'Raleway';
+    letter-spacing: 0.5px;
+    line-height: 28px;
+}
+.intro-text .btn {
+    border-radius: 0;
+    padding: 10px 25px;
+    background: #000;
+}
+
+/*>>>>>>>>>>>>>>>>>>>> FOOTER >>>>>>>>>>>>>>>>>>>>>>*/
+.footer {
+    font-family: 'Playfair';
+    padding: 50px;
+    background-color: #F2F2F2;
+}
+.links {
+    list-style: none;
+}
+.links a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+}
+.footer a {
+    transition: 0.3s;
+}
+.footer a:hover {
+    color: #999;
+}
+.blog-footer {
+    list-style-type: none;
+}
+.blog-footer a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+}
+.connect a{
+    color: #000;
+}
+
